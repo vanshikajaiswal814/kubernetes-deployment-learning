@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: devops-learning-hub-deployment
+  labels:
+    app: devops-learning-hub
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: devops-learning-hub
+
+  template:
+    metadata:
+      labels:
+        app: devops-learning-hub
+
+    spec:
+      containers:
+      - name: devops-learning-hub-container
+        image: vanshikamod/devops-learning-hub:v1
+
+        ports:
+        - containerPort: 8000

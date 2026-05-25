@@ -1,0 +1,4 @@
+NAME                                              READY   STATUS    RESTARTS   AGE
+devops-learning-hub-deployment-77964c4985-gdl6w   1/1     Running   0          4m8s
+devops-learning-hub-deployment-77964c4985-m4vnx   1/1     Running   0          10m
+devops-learning-hub-deployment-77964c4985-tpmcw   1/1     Running   0          10m
